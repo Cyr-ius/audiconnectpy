@@ -554,7 +554,7 @@ class Vehicle:
             )
             data: str | dict[str, Any] = (
                 '<?xml version="1.0" encoding= "UTF-8" ?><performAction xmlns="http://audi.de/connect/rs">'
-                + f'<quickstart><active>{"true" if action else "false"}</active></quickstart></performAction>'
+                + f"<quickstart><active>{'true' if action else 'false'}</active></quickstart></performAction>"
             )
             await post_req(headers, data)
 
